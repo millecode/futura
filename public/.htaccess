@@ -1,3 +1,4 @@
+
 # Use the front controller as index file. It serves as a fallback solution when
 # every other rewrite/redirect fails (e.g. in an aliased environment without
 # mod_rewrite). Additionally, this reduces the matching process for the
@@ -24,6 +25,11 @@ DirectoryIndex index.php
 
     RewriteEngine On
 
+    # Allow direct access to assets files
+    RewriteCond %{REQUEST_URI} ^/assets/
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the
     # project in a subdirectory, the base path will be prepended to allow proper
@@ -43,12 +49,6 @@ DirectoryIndex index.php
     # rewrite by Apache and not on subsequent cycles. Otherwise we would get an
     # endless redirect loop (request -> rewrite to front controller ->
     # redirect -> request -> ...).
-    # So in case you get a "too many redirects" error or you always get redirected
-    # to the start page because your Apache does not expose the REDIRECT_STATUS
-    # environment variable, you have 2 choices:
-    # - disable this feature by commenting the following 2 lines or
-    # - use Apache >= 2.3.9 and replace all L flags by END flags and remove the
-    #   following RewriteCond (best solution)
     RewriteCond %{ENV:REDIRECT_STATUS} =""
     RewriteRule ^index\.php(?:/(.*)|$) %{ENV:BASE}/$1 [R=301,L]
 
