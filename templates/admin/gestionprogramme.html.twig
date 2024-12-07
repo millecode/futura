@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Gestions des programmes{% endtrans %}
+	| Futura Solution Parteners
+{% endblock %}
+
+{% block body %}
+	{% include 'admin/_menu.html.twig' %}
+
+
+	<div class="my-3 text-center">
+		<h2>{% trans %}Gestions des Programmes{% endtrans %}</h2>
+	</div>
+
+
+	<div class="container">
+		<div class="row my-5">
+			{% for type, messages in app.flashes %}
+				{% for message in messages %}
+					<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+						{{ message }}
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				{% endfor %}
+			{% endfor %}
+			<div class="col-12 col-md-8">
+				<h6 class="my-3">{% trans %}Liste des programmes.{% endtrans %}</h6>
+				{% if programmes is empty %}
+					<div class="alert alert-warning">
+						<p>{% trans %}Aucun programme Publié.{% endtrans %}</p>
+					</div>
+				{% else %}
+					<div class="table-responsive my-3">
+						<table class="table table-hover rounded">
+							<thead class="text-center table-success">
+								<tr>
+									<th>{% trans %}Image{% endtrans %}</th>
+									<th>{% trans %}Titre{% endtrans %}</th>
+									<th>{% trans %}Date{% endtrans %}</th>
+									<th>{% trans %}Status{% endtrans %}</th>
+									<th colspan="3">{% trans %}Action{% endtrans %}</th>
+								</tr>
+							</thead>
+
+							<tbody class="text-center">
+								{% for programme in programmes %}
+									<tr class="align-middle">
+										<td class="text-center align-middle">
+											<img src="{{asset('assets/img/programme/'~ programme.image)}}" class="img-fluid rounded" width="60px" alt="">
+										</td>
+										<td class="text-center align-middle">{{programme.titre|slice(0, 10) ~ '...' }}</td>
+										<td class="text-center align-middle">{{programme.date|date('d/m/Y') }}</td>
+										<td class="text-center align-middle">
+											<label class="form-switch">
+												<input type="checkbox" role="switch" {{(programme.status) ? 'checked' : ''}} data-id="{{programme.id}}">
+											</label>
+										</td>
+										<td class="text-center align-middle ">
+											<form action="{{ path('admin_programme_supp', {'id': programme.id}) }}" method="post" onsubmit="return confirm('Confirmer la suppression du programme ?');" class="d-inline">
+												<input type="hidden" name="_token" value="{{ csrf_token('SUP' ~ programme.id) }}">
+												<button type="submit" class="btn btn-danger">
+													<i class="fa-regular fa-trash-can"></i>
+												</button>
+											</form>
+											<a href="{{path('admin_programme_modif',{'id':programme.id})}}" class="btn btn-warning">
+												<i class="fa-regular fa-pen-to-square"></i>
+											</a>
+										</td>
+									</tr>
+								{% endfor %}
+							</tbody>
+
+
+						</table>
+					</div>
+					<div class="navigation">
+						{{ knp_pagination_render(programmes) }}
+					</div>
+				{% endif %}
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-header">
+						<h5 class="text-center">{% trans %}Enregistrer un programme{% endtrans %}</h5>
+					</div>
+
+					<div class="card-body">
+						{{form_start(form)}}
+						{{form_widget(form)}}
+						<input type="submit" value="Enregistrer" class="btn btn-warning">
+						{{form_end(form)}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		window.onload = () => {
+let activer = document.querySelectorAll("[type=checkbox]")
+for (let bouton of activer) {
+bouton.addEventListener("click", function () {
+let xmlhttp = new XMLHttpRequest;
+xmlhttp.open("get", `/admin/programme/activer/${
+this.dataset.id
+}`)
+xmlhttp.send()
+})
+}
+}
+	</script>
+{% endblock %}

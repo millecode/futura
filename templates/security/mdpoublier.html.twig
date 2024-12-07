@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Mot de passe oublier{% endtrans %}
+	| Futura solution partenaire
+{% endblock %}
+
+{% block body %}
+	<div class="it-breadcrumb-area it-breadcrumb-bg">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12 mt-5">
+					<div class="it-breadcrumb-content z-index-3 text-center">
+						<div class="it-breadcrumb-title-box">
+							<h3 class="it-breadcrumb-title">{% trans %}Mot de passe oublier{% endtrans %}</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form method="post">
+
+
+		<div class="container">
+
+			<h1 class="h3 my-5 text-center">{% trans %}Réinitialiser votre mot de passe{% endtrans %}</h1>
+
+			<div class="row my-5">
+				<div class="col-12 col-md-2"></div>
+				<div class="col-12 col-md-8">
+					{% for type, messages in app.flashes %}
+						{% for message in messages %}
+							<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+								{{ message }}
+								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							</div>
+						{% endfor %}
+					{% endfor %}
+					<div class="card mb-5">
+
+						<div class="card-body">
+							<form action="{{path('mot-de-passe-oublier')}}" method="post">
+								<div class="mt-3">
+									<label for="inputEmail">{% trans %}Votre email{% endtrans %}</label>
+									<input type="email" name="email" id="inputEmail" class="form-control" required autofocus>
+								</div>
+
+								<div class="mt-3">
+									<input value="Réinitialiser" class="btn btn-lg btn-info" type="submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-2"></div>
+			</div>
+		</div>
+	</form>
+{% endblock %}

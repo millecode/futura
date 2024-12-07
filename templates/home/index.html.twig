@@ -1,0 +1,274 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Futura Solutions Partners |
+	{% trans %}Innovation{% endtrans %}
+	| Djibouti
+{% endblock %}
+
+{% block body %}
+
+	<!-- hero-area-start -->
+	<div class="it-hero-2-area it-hero-2-bg fix p-relative" style=" background-image: url('{{asset('assets/img/bannier1.png')}}'); background-size: cover; background-position: center; background-repeat: no-repeat;background-attachment: fixed;">
+
+
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6">
+					<div class="it-hero-2-content">
+						<h1 class="it-hero-2-title">
+							{% trans %}Bienvenu à Futura Solutions Partners{% endtrans %}
+						</h1>
+						<div class="it-hero-2-text">
+							<p>
+								{% trans %}Nous offrons des solutions personnalisées en collaborant étroitement avec nos clients pour comprendre leurs besoins et développer des stratégies innovantes qui les aident à atteindre leurs objectifs.{% endtrans %}
+							</p>
+							<div class="it-hero-2-btn-box d-flex align-items-center">
+								<a class="it-btn" href="{{path('services')}}">
+									<span>
+										{% trans %}Voir nos Services{% endtrans %}
+										<svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11 1.24023L16 7.24023L11 13.2402" stroke="currentcolor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M1 7.24023H16" stroke="currentcolor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</span>
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- hero-area-end -->
+
+
+	<!-- choose-area-start -->
+	<div class="it-choose-area p-relative pt-180 pb-110">
+		<div class="it-choose-shape-4 d-none d-md-block">
+			<img src="assets/img/choose/shape-1-4.png" alt="">
+		</div>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 mb-30 ">
+					<div class="it-choose-thumb-box text-center text-md-end">
+						<div class="it-choose-thumb p-relative">
+							<img src="assets/img/ban1.jpg" alt="">
+							<div class="it-choose-shape-1">
+								<img src="assets/img/choose/shape-1-5.png" alt="">
+							</div>
+							<div class="it-choose-shape-2">
+								<img src="assets/img/choose/shape-1-2.png" alt="">
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 mb-30 px-3">
+					<div class="it-choose-left">
+						<div class="it-choose-title-box mb-30">
+							<span class="it-section-subtitle">{% trans %}Notre mission{% endtrans %}</span>
+							<h4 class="it-section-title">
+								{% trans %}Notre engagement envers la réussite des organisations.{% endtrans %}
+							</h4>
+						</div>
+						<div class="it-choose-text pb-15">
+							<p>{% trans %}Futura Solution s'engage à fournir aux organisations les outils et connaissances pour prospérer. Nous aidons nos clients à réaliser leur vision avec des solutions innovantes et durables, tout en promouvant la diversité, l'inclusion et un environnement collaboratif pour tous.{% endtrans %}</p>
+						</div>
+						<div class="it-choose-content-box">
+							<div class="row gx-20">
+								<div class="col-md-6 col-sm-6 mb-20">
+									<div class="it-choose-content">
+										<h5>
+											<i class="fa-solid fa-circle-check"></i>
+											{% trans %}Notre mission{% endtrans %}
+											:</h5>
+										<p>
+											{% trans %}Offrir des outils et des connaissances pour la prospérité{% endtrans %}.
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 mb-20">
+									<div class="it-choose-content">
+										<h5>
+											<i class="fa-solid fa-circle-check"></i>
+											{% trans %}Notre engagement{% endtrans %}
+											:</h5>
+										<p>
+											{% trans %}Aider les clients à réaliser leur vision{% endtrans %}.
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 mb-20">
+									<div class="it-choose-content">
+										<h5>
+											<i class="fa-solid fa-circle-check"></i>
+											{% trans %}Nos solutions{% endtrans %}
+											:</h5>
+										<p>
+											{% trans %}Innovantes et durables{% endtrans %}.
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 mb-20">
+									<div class="it-choose-content">
+										<h5>
+											<i class="fa-solid fa-circle-check"></i>
+											{% trans %}Nos valeurs{% endtrans %}
+											:</h5>
+										<p>
+											{% trans %}Diversité, inclusion et collaboration{% endtrans %}.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- choose-area-end -->
+
+
+	<!-- valu-area-start -->
+	<div class="it-value-area pt-120 pb-120 p-relative fix">
+		<div class="it-value-shape-1 d-none d-xxl-block">
+			<img src="assets/img/value/value-shape-3.jpg" alt="">
+		</div>
+		<div class="it-value-shape-2 d-none d-xl-block">
+			<img src="assets/img/value/value-shape-4.jpg" alt="">
+		</div>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6">
+					<div class="it-choose-title-box mb-30">
+						<span class="it-section-subtitle">{% trans %}Notre Vission{% endtrans %}</span>
+						<h4 class="it-section-title">
+							{% trans %}Pour un avenir équitable et durable{% endtrans %}
+						</h4>
+					</div>
+
+					<p>
+						{% trans %}Nous croyons en un avenir où les femmes ont le pouvoir, où l'entrepreneuriat social prospère et où l'environnement est préservé. C'est pourquoi Futura Solution Partners s'engage à créer des solutions innovantes qui permettent l'égalité et l'équité pour tous. Nous travaillons en étroite collaboration avec nos partenaires pour offrir des conseils de qualité et des services de soutien pour renforcer les communautés. Nous sommes convaincus qu'en travaillant ensemble, nous pouvons créer un monde meilleur pour tous.{% endtrans %}
+					</p>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<div class="it-value-right-wrap text-end p-relative">
+						<div class="it-value-right-img p-relative">
+							<img src="{{asset('assets/img/accueil/vission.webp')}}" alt="">
+							<a class="it-value-play-btn" href="#">
+								<i class="fa-sharp fa-solid fa-play"></i>
+							</a>
+						</div>
+						<div class="it-value-img-shape d-none d-xl-block">
+							<img src="assets/img/value/value-shape-2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- valu-area-end -->
+
+
+	<!-- testimonial-area-start -->
+	<div class="it-testimonial-5-area it-testimonial-style-2 p-relative  bg-light ">
+
+		<div class="container my-5 ">
+			<div class="row ">
+				<div class="col-xl-12">
+					<div class="it-testimonial-5-title-box text-center mb-60">
+						<span class="it-section-subtitle mt-20">{% trans %}Témoignages{% endtrans %}</span>
+						<h4 class="it-section-title-5">{% trans %}Nos clients temoingne de notre expertise{% endtrans %}</h4>
+					</div>
+				</div>
+				<div class="col-xl-12">
+					<div class="it-testimonial-5-wrapper p-relative">
+						<div class="swiper-container it-testimonial-5-active">
+							<div class="swiper-wrapper">
+								{% if temoinages is empty %}
+									<div class="alert alert-info">
+										<p>{% trans %}Aucune avis donneés{% endtrans %}.</p>
+									</div>
+								{% else %}
+									{% for temoinage in temoinages %}
+										<div class="swiper-slide">
+											<div class="it-testimonial-5-item p-relative z-index bg-secondary">
+												<div class="it-testimonial-3-author-box d-flex align-items-center mb-20">
+													<div class="it-testimonial-3-avata">
+														<img src="{{asset('assets/img/temoinage/'~ temoinage.image)}}" class="img-fluid" alt="">
+													</div>
+													<div class="it-testimonial-3-author-info">
+														<h5>{{temoinage.nom}}</h5>
+														<span>{{temoinage.poste}}</span>
+													</div>
+												</div>
+												<div class="it-testimonial-5-content z-index-5">
+													<div class="it-testimonial-5-star pb-10">
+														<i class="fa-sharp fa-solid fa-star"></i>
+														<i class="fa-sharp fa-solid fa-star"></i>
+														<i class="fa-sharp fa-solid fa-star"></i>
+														<i class="fa-sharp fa-solid fa-star"></i>
+														<i class="fa-sharp fa-solid fa-star"></i>
+													</div>
+													<div class="it-testimonial-5-text">
+														<p>
+															{{temoinage.description}}
+														</p>
+													</div>
+												</div>
+												<div class="it-testimonial-5-quote d-none d-xl-block">
+													<img src="{{asset('assets/img/testimonial/quote-1-2.png')}}" alt="">
+												</div>
+											</div>
+										</div>
+									{% endfor %}
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- testimonial-area-end -->
+
+
+	<!-- category-area-start -->
+	<div class="it-category-area pt-120 pb-50">
+		<div class="container">
+			<div class="it-category-title-wrap p-relative mb-20">
+
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="it-testimonial-5-title-box text-center mb-60">
+							<span class="it-section-subtitle">{% trans %}Partenaires{% endtrans %}</span>
+							<h4 class="it-section-title-5">{% trans %}Nos partenaires{% endtrans %}</h4>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				{% if partenaires is empty %}
+					<div class="alert alert-info">
+						<p>{% trans %}Aucune partenaire enregistrer{% endtrans %}.</p>
+					</div>
+				{% else %}
+					{% for partenaire in partenaires %}
+						<div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+							<div class="it-category-item text-center">
+								<img src="{{asset('assets/img/partenaire/'~ partenaire.image)}}" class="img-fluid rounded" alt="{{partenaire.nom}}">
+							</div>
+						</div>
+					{% endfor %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<!-- category-area-end -->
+{% endblock %}

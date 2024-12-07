@@ -1,0 +1,83 @@
+<div class="it-breadcrumb-area it-breadcrumb-bg">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-12 mt-5">
+				<div class="it-breadcrumb-content z-index-3 text-center">
+					<div class="it-breadcrumb-title-box">
+						<h3 class="it-breadcrumb-title">Administration</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+
+		<a class="navbar-toggler text-center mx-3 my-2 bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa-solid fa-bars"></i>
+			Menu
+		</a>
+		<div class="collapse navbar-collapse border border-solide rounded p-2" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link bg-success text-light p-2 rounded mx-2 my-1" href="{{path('admin')}}">
+						<i class="fa-solid fa-house"></i>
+						Administration
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link bg-success text-light p-2 rounded mx-2 my-1" href="{{ path('admin_service') }}">
+						<i class="fa-solid fa-sliders"></i>
+						Gestions des services
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link bg-success text-light p-2 rounded mx-2 my-1" href="{{path("admin_programme")}}">
+						<i class="fa-solid fa-bars"></i>
+						Gestions des programmes
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link bg-success text-light p-2 rounded mx-2 my-1" href="{{path('admin_equipe')}}">
+						<i class="fa-solid fa-users"></i>
+						Equipes
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link bg-success text-light p-2 rounded mx-2 my-1" href="{{path('admin_actualiter')}}">
+						<i class="fa-solid fa-newspaper"></i>
+						Gestions des actualités
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link bg-success text-light p-2 rounded mx-2 my-1" href="{{path('profile')}}">
+						<i class="fa-solid fa-user"></i>
+						Profils
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link bg-success text-light p-2 rounded mx-2 my-1" href="{{path('admin_parametre')}}">
+						<i class="fa-solid fa-gear"></i>
+						Paramètre
+					</a>
+				</li>
+			</ul>
+
+			<div class="d-flex">
+				<a href="{{path('app_logout')}}" class="btn btn-danger">
+					<i class="fa-solid fa-right-from-bracket"></i>
+					<span class="d-inline d-md-none">Déconnexion</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+</nav>

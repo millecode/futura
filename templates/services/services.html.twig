@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Nos Services{% endtrans %}
+	| Futura Solution Parteners
+{% endblock %}
+
+{% block body %}
+
+	<div class="it-breadcrumb-area it-breadcrumb-bg">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12 mt-5">
+					<div class="it-breadcrumb-content z-index-3 text-center">
+						<div class="it-breadcrumb-title-box">
+							<h3 class="it-breadcrumb-title">{% trans %}Nos services{% endtrans %}</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container my-5 d-flex">
+		<p class="grey-bg mt-5 text-center rounded p-3">{% trans %}Futura Solution est une société de conseil spécialisée dans des solutions innovantes pour les enjeux sociétaux, avec un accompagnement personnalisé pour atteindre les objectifs de ses clients{% endtrans %}.</p>
+	</div>
+
+
+	<!-- feature-area-start -->
+	<div class="it-feature-3-area it-feature-3-bg it-feature-3-style mt-3 pb-90">
+		<div class="container">
+			<h1 class="text-center">{% trans %}Nos differents services{% endtrans %}</h1>
+			<div class="row my-5">
+				{% for service in services %}
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+						<div class="it-feature-3-item mb-30 text-center">
+							<div class="mb-3">
+								<img src="{{asset('assets/img/services/'~ service.image)}}" class="rounded img-fluid" alt="">
+							</div>
+							<div class="it-feature-3-content">
+								<h4 class="it-feature-3-title">
+									<a href="{{path('voir_service',{'id':service.id,'slug':service.slug})}}">{{service.titre}}</a>
+								</h4>
+								<p>
+									{{service.description|length > 110 ? service.description|slice(0, 110) ~ '...'}}
+								</p>
+								<a class="it-btn bg-secondary" href="{{path('voir_service',{'id':service.id,'slug':service.slug})}}">
+									<span>
+										{% trans %}Voir la suite{% endtrans %}
+										<svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11 1.24023L16 7.24023L11 13.2402" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M1 7.24023H16" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				{% endfor %}
+
+				<div class="navigation my-5">
+					{{ knp_pagination_render(services) }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- feature-area-end -->
+
+{% endblock %}

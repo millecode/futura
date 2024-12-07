@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Gestion de L'équipes{% endtrans %}
+	| Futura Solution Parteners
+{% endblock %}
+
+{% block body %}
+	{% include 'admin/_menu.html.twig' %}
+
+
+	<div class="my-3 text-center">
+		<h2>{% trans %}Gestion de L'équipes{% endtrans %}</h2>
+	</div>
+
+
+	<div class="container">
+		<div class="row my-5">
+			{% for type, messages in app.flashes %}
+				{% for message in messages %}
+					<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+						{{ message }}
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				{% endfor %}
+			{% endfor %}
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-header">
+						<h5 class="text-center">{% trans %}Enregistrer un personnel{% endtrans %}</h5>
+					</div>
+
+					<div class="card-body">
+						{{form_start(form)}}
+						{{form_widget(form)}}
+						<input type="submit" value="Enregistrer" class="btn btn-primary">
+						{{form_end(form)}}
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-12 col-md-8">
+				<h6 class="my-3">{% trans %}Liste de l'équipes{% endtrans %}.</h6>
+				{% if equipes is empty %}
+					<div class="alert alert-info">
+						<p>{% trans %}Aucune personne enregistrer.{% endtrans %}</p>
+					</div>
+				{% else %}
+					<div class="row">
+						{% for equipe in equipes %}
+
+							<div class="col-12 col-md-6">
+								<div class="it-team-item">
+									<div class="it-team-thumb-box p-relative">
+										<div class="it-team-thumb">
+											<img src="{{asset("assets/img/equipe/"~ equipe.image)}}" class="img-fluid" alt="{{equipe.nom}}">
+										</div>
+
+										<div class="it-team-author-box d-flex align-items-center justify-content-between">
+											<div class="it-team-author-info">
+												<h5 class="it-team-author-name">
+													<a href="">{{equipe.nom}}</a>
+												</h5>
+												<span>{{equipe.poste}}</span>
+												<br>
+												<form action="{{ path('admin_equipes_supp', {'id': equipe.id}) }}" method="post" onsubmit="return confirm('Confirmer la suppression ?');" class="d-inline">
+													<input type="hidden" name="_token" value="{{ csrf_token('SUP' ~ equipe.id) }}">
+													<button type="submit" class="btn btn-danger">
+														<i class="fa-regular fa-trash-can"></i>
+													</button>
+												</form>
+												<a href="{{path('admin_equipe_modif',{'id':equipe.id})}}" class="btn btn-warning">
+													<i class="fa-regular fa-pen-to-square"></i>
+												</a>
+											</div>
+											<div class="it-team-link">
+												<a href="{{path('voir_equipe',{'id':equipe.id})}}">
+													<svg width="21" height="8" viewbox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="currentcolor"/>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						{% endfor %}
+					</div>
+					<div class="navigation my-5">
+						{{ knp_pagination_render(equipes) }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

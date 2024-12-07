@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Se connecter{% endtrans %}
+	| Futura solution partenaire
+{% endblock %}
+
+{% block body %}
+	<div class="it-breadcrumb-area it-breadcrumb-bg">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12 mt-5">
+					<div class="it-breadcrumb-content z-index-3 text-center">
+						<div class="it-breadcrumb-title-box">
+							<h3 class="it-breadcrumb-title">{% trans %}Se connecter{% endtrans %}</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form method="post">
+
+
+		<div class="container">
+
+			<h1 class="h3 my-5 text-center">{% trans %}Veuillez se connecter{% endtrans %}</h1>
+
+			<div class="row my-5">
+				<div class="col-12 col-md-2"></div>
+				<div class="col-12 col-md-8">
+					{% if error %}
+						<div class="alert alert-danger alert-dismissible fade show" role="alert">
+							{{ error.messageKey|trans(error.messageData, 'security') }}
+							<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+						</div>
+					{% endif %}
+					{% for type, messages in app.flashes %}
+						{% for message in messages %}
+							<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+								{{ message }}
+								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							</div>
+						{% endfor %}
+					{% endfor %}
+					<div class="card mb-5">
+						<div class="card-body">
+							<div class="mt-3">
+								<label for="inputEmail">{% trans %}Email{% endtrans %}</label>
+								<input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+							</div>
+							<div class="mt-3">
+								<label for="inputPassword">{% trans %}Mot de passe{% endtrans %}
+									:</label>
+								<input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+							</div>
+
+							<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+							<p class="my-2">
+								{% trans %}Avez-vous oubliez votre mot de passe.{% endtrans %}
+								<a href="{{path('mot-de-passe-oublier')}}" class="text-danger">{% trans %}Trouver votre mot de passe{% endtrans %}.</a>
+							</p>
+
+
+							<div class="mt-3">
+								<button class="btn btn-lg btn-info" type="submit">
+									{% trans %}Se connecter{% endtrans %}
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-2"></div>
+			</div>
+		</div>
+	</form>
+{% endblock %}

@@ -1,0 +1,171 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Gestions des Partenaires{% endtrans %}
+	| Futura Solution Parteners
+{% endblock %}
+
+{% block body %}
+	{% include 'admin/_menu.html.twig' %}
+
+
+	<div class="my-3 text-center">
+		<h2>{% trans %}Gestions des Partenaires{% endtrans %}</h2>
+	</div>
+
+
+	<div class="container">
+		<div class="row my-5">
+			{% for type, messages in app.flashes %}
+				{% for message in messages %}
+					<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+						{{ message }}
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				{% endfor %}
+			{% endfor %}
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-header">
+						<h5 class="text-center">{% trans %}Enregistrer un partenaire{% endtrans %}</h5>
+					</div>
+
+					<div class="card-body">
+						{{form_start(form)}}
+						{{form_widget(form)}}
+						<input type="submit" value="Enregistrer" class="btn btn-danger">
+						{{form_end(form)}}
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-12 col-md-8">
+				<h6 class="my-3">{% trans %}Liste des partenaires publiés{% endtrans %}</h6>
+				{% if partenaires is empty %}
+					<div class="alert alert-info">
+						<p>{% trans %}Aucun Partenaire Publier.{% endtrans %}</p>
+					</div>
+				{% else %}
+					<div class="table-responsive my-3">
+						<table class="table table-hover rounded">
+							<thead class="text-center table-success">
+								<tr>
+									<th>{% trans %}Nom du partenaire{% endtrans %}</th>
+									<th>{% trans %}Logo du partenaire{% endtrans %}</th>
+									<th>{% trans %}Date{% endtrans %}</th>
+									<th colspan="3">{% trans %}Action{% endtrans %}</th>
+								</tr>
+							</thead>
+
+							<tbody class="text-center">
+								{% for partenaire in partenaires %}
+									<tr class="align-middle">
+										<td class="text-center align-middle">{{partenaire.nom}}</td>
+										<td class="text-center align-middle">
+											<img src="{{asset('assets/img/partenaire/'~ partenaire.image)}}" class="img-fluid" width="60px" alt="">
+										</td>
+										<td class="text-center align-middle">{{partenaire.date|date('d/m/Y') }}</td>
+
+										<td class="text-center align-middle ">
+											<form action="{{ path('admin_partenaire_supp', {'id': partenaire.id}) }}" method="post" onsubmit="return confirm('Confirmer la suppression du service ?');" class="d-inline">
+												<input type="hidden" name="_token" value="{{ csrf_token('SUP' ~ partenaire.id) }}">
+												<button type="submit" class="btn btn-danger">
+													<i class="fa-regular fa-trash-can"></i>
+												</button>
+											</form>
+											<a href="{{path('admin_partenaire_modif',{'id':partenaire.id})}}" class="btn btn-warning">
+												<i class="fa-regular fa-pen-to-square"></i>
+											</a>
+										</td>
+									</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+					<div class="navigation">
+						{{ knp_pagination_render(partenaires) }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+
+	<div class="my-3 text-center">
+		<h2>{% trans %}Gestions des Avis (Temoinages){% endtrans %}</h2>
+	</div>
+
+
+	<div class="container">
+		<div class="row my-5">
+
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-header">
+						<h5 class="text-center">{% trans %}Enregistrer un avis{% endtrans %}</h5>
+					</div>
+
+					<div class="card-body">
+						{{form_start(formT)}}
+						{{form_widget(formT)}}
+						<input type="submit" value="Enregistrer" class="btn btn-danger">
+						{{form_end(formT)}}
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-12 col-md-8">
+				<h6 class="my-3">{% trans %}Liste des avis publiés{% endtrans %}</h6>
+				{% if temoinages is empty %}
+					<div class="alert alert-info">
+						<p>{% trans %}Aucun avis Publier.{% endtrans %}</p>
+					</div>
+				{% else %}
+					<div class="table-responsive my-3">
+						<table class="table table-hover rounded">
+							<thead class="text-center table-success">
+								<tr>
+									<th>{% trans %}Nom du client{% endtrans %}</th>
+									<th>{% trans %}Image{% endtrans %}</th>
+									<th>{% trans %}Description{% endtrans %}</th>
+									<th>{% trans %}Date{% endtrans %}</th>
+									<th colspan="3">{% trans %}Action{% endtrans %}</th>
+								</tr>
+							</thead>
+
+							<tbody class="text-center">
+								{% for temoinage in temoinages %}
+									<tr class="align-middle">
+										<td class="text-center align-middle">{{temoinage.nom}}</td>
+										<td class="text-center align-middle">
+											<img src="{{asset('assets/img/temoinage/'~ temoinage.image)}}" class="img-fluid" width="60px" alt="">
+										</td>
+										<td class="text-center align-middle">{{temoinage.description|slice(0, 10) ~ '...' }}</td>
+										<td class="text-center align-middle">{{temoinage.date|date('d/m/Y') }}</td>
+
+										<td class="text-center align-middle ">
+											<form action="{{ path('admin_temoinage_supp', {'id': temoinage.id}) }}" method="post" onsubmit="return confirm('Confirmer la suppression du service ?');" class="d-inline">
+												<input type="hidden" name="_token" value="{{ csrf_token('SUP' ~ temoinage.id) }}">
+												<button type="submit" class="btn btn-danger">
+													<i class="fa-regular fa-trash-can"></i>
+												</button>
+											</form>
+											<a href="{{path('admin_temoinage_modif',{'id':temoinage.id})}}" class="btn btn-warning">
+												<i class="fa-regular fa-pen-to-square"></i>
+											</a>
+										</td>
+									</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+					<div class="navigation">
+						{{ knp_pagination_render(temoinages) }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Actualiter{% endtrans %}
+	| Futura Solution Parteners
+{% endblock %}
+
+{% block body %}
+
+	<div class="it-breadcrumb-area it-breadcrumb-bg">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12 mt-5">
+					<div class="it-breadcrumb-content z-index-3 text-center">
+						<div class="it-breadcrumb-title-box">
+							<h3 class="it-breadcrumb-title">{% trans %}Actualités{% endtrans %}</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- feature-area-start -->
+	<div class="it-feature-3-area it-feature-3-bg it-feature-3-style mt-3 pb-90">
+		<div class="container">
+			<div class="row my-5">
+				{% for actualiter in actualiters %}
+					<div class="col-md-2"></div>
+					<div class="col-md-8 mb-30">
+						<div class="card mb-3">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img src="{{asset('assets/img/actualiter/'~ actualiter.image)}}" class="img-fluid rounded-start" alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">
+											<a href="{{path('voir_actualiter',{'id':actualiter.id,'slug':actualiter.slug})}}">{{actualiter.titre}}</a>
+										</h5>
+										<p class="card-text">{{actualiter.description | slice(0, 80) ~ '...' }}</p>
+										<p class="card-text">
+											<small class="text-muted">{{actualiter.date | date('d/m/Y')}}</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+
+				{% endfor %}
+
+				<div class="navigation my-5">
+					{{ knp_pagination_render(actualiters) }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- feature-area-end -->
+
+	<pre>
+		{{ dump(locales) }}
+	</pre>
+
+{% endblock %}

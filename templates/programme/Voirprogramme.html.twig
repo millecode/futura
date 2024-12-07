@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{programme.titre}}
+	| Futura Solution Parteners
+{% endblock %}
+
+{% block body %}
+
+	<div class="it-breadcrumb-area it-breadcrumb-bg">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12 mt-5">
+					<div class="it-breadcrumb-content z-index-3 text-center">
+						<div class="it-breadcrumb-title-box">
+							<h3 class="it-breadcrumb-title">{{programme.titre}}</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container pt-120 pb-100">
+		<div class="row">
+			<div class="col-xl-9 col-lg-8">
+
+				<div class=" mb-35 px-5 text-center">
+					<img src="{{asset('assets/img/programme/'~ programme.image)}}" class="img-fluid rounded" alt="">
+				</div>
+
+				<h4 class="it-evn-details-title mb-0 pb-5 text-center">{{programme.titre}}</h4>
+
+
+				<div class="it-course-details-content">
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+							<div class="it-course-details-wrapper">
+								<div class="it-evn-details-text mb-40 mt-10">
+
+									<p>{{programme.description}}</p>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4">
+				<div class="it-evn-sidebar-box it-course-sidebar-box">
+					<div class="it-evn-sidebar-thumb mb-30">
+						<img src="assets/img/event/details-sm.jpg" alt="">
+					</div>
+					<div class="it-course-sidebar-rate-box pb-20">
+
+						<h6 class="text-center">{% trans %}Nos Programmes{% endtrans %}</h6>
+
+					</div>
+					<div class="">
+						<ul class="p-2">
+							{% for programmes in programmes %}
+								<li>
+									<a href="{{path('voir_programme',{'id':programmes.id,'slug':programmes.slug})}}">
+										<span>{{programmes.titre}}</span>
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

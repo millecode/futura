@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="PJ8dHq_" resname="vich_uploader.form_label.delete_confirm">
+        <source>vich_uploader.form_label.delete_confirm</source>
+        <target>Delete?</target>
+      </trans-unit>
+      <trans-unit id="SWe802A" resname="vich_uploader.link.download">
+        <source>vich_uploader.link.download</source>
+        <target>Download</target>
+      </trans-unit>
+      <trans-unit id="zx5TI5R" resname="Actualiter">
+        <source>Actualiter</source>
+        <target>News</target>
+      </trans-unit>
+      <trans-unit id="_sH81pu" resname="Actualités">
+        <source>Actualités</source>
+        <target>News</target>
+      </trans-unit>
+      <trans-unit id="zxWHnHm" resname="Contactez-nous">
+        <source>Contactez-nous</source>
+        <target>Contact us</target>
+      </trans-unit>
+      <trans-unit id="WWaku0X" resname="Prenez contact avec nous.">
+        <source>Prenez contact avec nous.</source>
+        <target>Get in touch with us.</target>
+      </trans-unit>
+      <trans-unit id="xbxh5FA" resname="Vous avez un projet en tête ? Envoyez-nous un message.">
+        <source>Vous avez un projet en tête ? Envoyez-nous un message.</source>
+        <target>Do you have a project in mind? Send us a message.</target>
+      </trans-unit>
+      <trans-unit id="jPtXcgB" resname="Address">
+        <source>Address</source>
+        <target>Address</target>
+      </trans-unit>
+      <trans-unit id="4iRtdnb" resname="Contact">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="OHjbKk8" resname="Contactez-nous seulement via le formulaire">
+        <source>Contactez-nous seulement via le formulaire</source>
+        <target>Contact us only via the form</target>
+      </trans-unit>
+      <trans-unit id="FDzHw_0" resname="Suivez-nous">
+        <source>Suivez-nous</source>
+        <target>Follow us</target>
+      </trans-unit>
+      <trans-unit id="uRBibkq" resname="Envoyer">
+        <source>Envoyer</source>
+        <target>Send</target>
+      </trans-unit>
+      <trans-unit id="mpHDX6N" resname="Administration">
+        <source>Administration</source>
+        <target>Administration</target>
+      </trans-unit>
+      <trans-unit id="Qox6KgM" resname="Services">
+        <source>Services</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="yB_3g3l" resname="Programmes">
+        <source>Programmes</source>
+        <target>Programs</target>
+      </trans-unit>
+      <trans-unit id="zAqA.iW" resname="Expert Métier">
+        <source>Expert Métier</source>
+        <target>Business Expert</target>
+      </trans-unit>
+      <trans-unit id="J_nja8y" resname="Liste des Contacts">
+        <source>Liste des Contacts</source>
+        <target>List of Contacts</target>
+      </trans-unit>
+      <trans-unit id="7.5qrxg" resname="Rechercher">
+        <source>Rechercher</source>
+        <target>To research</target>
+      </trans-unit>
+      <trans-unit id="xE8xYu5" resname="Nom">
+        <source>Nom</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="aHcBT8F" resname="Téléphone">
+        <source>Téléphone</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="eyvuORM" resname="Sujet">
+        <source>Sujet</source>
+        <target>Subject</target>
+      </trans-unit>
+      <trans-unit id="1cuPpsS" resname="Date">
+        <source>Date</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="6xCSWiZ" resname="Status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="BUIQ..a" resname="Action">
+        <source>Action</source>
+        <target>Action</target>
+      </trans-unit>
+      <trans-unit id="nNtkC6." resname="Aucun contact pour l'instant.">
+        <source>Aucun contact pour l'instant.</source>
+        <target>No contact yet.</target>
+      </trans-unit>
+      <trans-unit id="lCBY25m" resname="Confirmer">
+        <source>Confirmer</source>
+        <target>Confirm</target>
+      </trans-unit>
+      <trans-unit id="QP6w9yf" resname="Non-confirmer">
+        <source>Non-confirmer</source>
+        <target>Unconfirm</target>
+      </trans-unit>
+      <trans-unit id="jhR3kSJ" resname="Gestions des Actualités">
+        <source>Gestions des Actualités</source>
+        <target>News Management</target>
+      </trans-unit>
+      <trans-unit id="iI2uAai" resname="Enregistrer un service">
+        <source>Enregistrer un service</source>
+        <target>Register a service</target>
+      </trans-unit>
+      <trans-unit id="Vmf2nMk" resname="Liste des Actualités publiés">
+        <source>Liste des Actualités publiés</source>
+        <target>List of published news</target>
+      </trans-unit>
+      <trans-unit id=".u7oNIi" resname="Aucune actualités Publier">
+        <source>Aucune actualités Publier</source>
+        <target>No news Publish</target>
+      </trans-unit>
+      <trans-unit id="VKrWoPi" resname="Image">
+        <source>Image</source>
+        <target>Image</target>
+      </trans-unit>
+      <trans-unit id="EFdpwxQ" resname="Titre de l'actualité">
+        <source>Titre de l'actualité</source>
+        <target>News Title</target>
+      </trans-unit>
+      <trans-unit id="YyZeyhN" resname="Gestion de L'équipes">
+        <source>Gestion de L'équipes</source>
+        <target>Team Management</target>
+      </trans-unit>
+      <trans-unit id="4vUdCmE" resname="Enregistrer un personnel">
+        <source>Enregistrer un personnel</source>
+        <target>Register a staff</target>
+      </trans-unit>
+      <trans-unit id="X9EcsR6" resname="Liste de l'équipes">
+        <source>Liste de l'équipes</source>
+        <target>Team List</target>
+      </trans-unit>
+      <trans-unit id="MZYD4sr" resname="Aucune personne enregistrer.">
+        <source>Aucune personne enregistrer.</source>
+        <target>No people registered.</target>
+      </trans-unit>
+      <trans-unit id="AeP9Hxz" resname="Gestions des Partenaires">
+        <source>Gestions des Partenaires</source>
+        <target>Partner Management</target>
+      </trans-unit>
+      <trans-unit id="BKo5PfO" resname="Enregistrer un partenaire">
+        <source>Enregistrer un partenaire</source>
+        <target>Register a partner</target>
+      </trans-unit>
+      <trans-unit id="9_8oK30" resname="Liste des partenaires publiés">
+        <source>Liste des partenaires publiés</source>
+        <target>List of published partners</target>
+      </trans-unit>
+      <trans-unit id="9jePg1Q" resname="Aucun Partenaire Publier.">
+        <source>Aucun Partenaire Publier.</source>
+        <target>No Partner Publish.</target>
+      </trans-unit>
+      <trans-unit id="7Z5FFTZ" resname="Nom du partenaire">
+        <source>Nom du partenaire</source>
+        <target>Partner Name</target>
+      </trans-unit>
+      <trans-unit id="mIwiXbi" resname="Logo du partenaire">
+        <source>Logo du partenaire</source>
+        <target>Partner Logo</target>
+      </trans-unit>
+      <trans-unit id="9j8gAaV" resname="Gestions des Avis (Temoinages)">
+        <source>Gestions des Avis (Temoinages)</source>
+        <target>Reviews Management (Testimonials)</target>
+      </trans-unit>
+      <trans-unit id="VGTWw9a" resname="Enregistrer un avis">
+        <source>Enregistrer un avis</source>
+        <target>Save a review</target>
+      </trans-unit>
+      <trans-unit id="q0cRzpS" resname="Liste des avis publiés">
+        <source>Liste des avis publiés</source>
+        <target>List of published opinions</target>
+      </trans-unit>
+      <trans-unit id="f_NLVb1" resname="Aucun avis Publier.">
+        <source>Aucun avis Publier.</source>
+        <target>No reviews Publish.</target>
+      </trans-unit>
+      <trans-unit id="vYfa4_v" resname="Nom du client">
+        <source>Nom du client</source>
+        <target>Customer Name</target>
+      </trans-unit>
+      <trans-unit id="NMmVjl0" resname="Description">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="a6OxxSC" resname="Gestions des programmes">
+        <source>Gestions des programmes</source>
+        <target>Program management</target>
+      </trans-unit>
+      <trans-unit id="yXSYLJ7" resname="Gestions des Programmes">
+        <source>Gestions des Programmes</source>
+        <target>Program Management</target>
+      </trans-unit>
+      <trans-unit id="5.WypH7" resname="Liste des programmes.">
+        <source>Liste des programmes.</source>
+        <target>List of programs.</target>
+      </trans-unit>
+      <trans-unit id="NgmT__q" resname="Aucun programme Publié.">
+        <source>Aucun programme Publié.</source>
+        <target>No program published.</target>
+      </trans-unit>
+      <trans-unit id="uezKhds" resname="Titre">
+        <source>Titre</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="7zxL.d7" resname="Enregistrer un programme">
+        <source>Enregistrer un programme</source>
+        <target>Save a program</target>
+      </trans-unit>
+      <trans-unit id="yNU6sId" resname="Gestions des services">
+        <source>Gestions des services</source>
+        <target>Service management</target>
+      </trans-unit>
+      <trans-unit id="oUKAn6S" resname="Liste des services publiés">
+        <source>Liste des services publiés</source>
+        <target>List of published services.</target>
+      </trans-unit>
+      <trans-unit id="PbCM_ex" resname="Aucun Service Publié">
+        <source>Aucun Service Publié</source>
+        <target>No Service Published</target>
+      </trans-unit>
+      <trans-unit id="apicNkZ" resname="Titre du Service">
+        <source>Titre du Service</source>
+        <target>Service Title</target>
+      </trans-unit>
+      <trans-unit id="5Y34z39" resname="Profile">
+        <source>Profile</source>
+        <target>Profil</target>
+      </trans-unit>
+      <trans-unit id="dDFd1R7" resname="Votre Nom">
+        <source>Votre Nom</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="b7bcOph" resname="Votre Télèphone">
+        <source>Votre Télèphone</source>
+        <target>Your Phone</target>
+      </trans-unit>
+      <trans-unit id="JZi_tm0" resname="Email">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="oZ8BvuY" resname="Votre poste actuel">
+        <source>Votre poste actuel</source>
+        <target>Your current position</target>
+      </trans-unit>
+      <trans-unit id="VMlY763" resname="Création d'un compte">
+        <source>Création d'un compte</source>
+        <target>Creating an account</target>
+      </trans-unit>
+      <trans-unit id=".LkBxtR" resname="Liste des utilisateurs">
+        <source>Liste des utilisateurs</source>
+        <target>List of users</target>
+      </trans-unit>
+      <trans-unit id="wkjV6.p" resname="Aucun utilisateur crée.">
+        <source>Aucun utilisateur crée.</source>
+        <target>No user created</target>
+      </trans-unit>
+      <trans-unit id="b2MUiu5" resname="Gestions des coordonées du sites">
+        <source>Gestions des coordonées du sites</source>
+        <target>Website coordinates management</target>
+      </trans-unit>
+      <trans-unit id="HAWB8sJ" resname="Liste des coordonnés">
+        <source>Liste des coordonnés</source>
+        <target>List of contact details</target>
+      </trans-unit>
+      <trans-unit id="mBOqVU8" resname="Aucun coordonées crée.">
+        <source>Aucun coordonées crée.</source>
+        <target>No contact details created.</target>
+      </trans-unit>
+      <trans-unit id="F9XjDSw" resname="Identifiant">
+        <source>Identifiant</source>
+        <target>Identifier</target>
+      </trans-unit>
+      <trans-unit id="gZdyOsC" resname="Phone">
+        <source>Phone</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="u2LWhdK" resname="Date de contact">
+        <source>Date de contact</source>
+        <target>Contact date</target>
+      </trans-unit>
+      <trans-unit id="NBoD7d4" resname="Sujet de contact">
+        <source>Sujet de contact</source>
+        <target>Contact subject</target>
+      </trans-unit>
+      <trans-unit id="2dDkKh3" resname="Message du contact">
+        <source>Message du contact</source>
+        <target>Message from contact</target>
+      </trans-unit>
+      <trans-unit id="3PMa7CE" resname="Accueil">
+        <source>Accueil</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="Ea0mqNE" resname="services">
+        <source>services</source>
+        <target>services</target>
+      </trans-unit>
+      <trans-unit id="7kXlAEw" resname="Programmme">
+        <source>Programmme</source>
+        <target>Program</target>
+      </trans-unit>
+      <trans-unit id="YkA9SXq" resname="Equipes">
+        <source>Equipes</source>
+        <target>Team</target>
+      </trans-unit>
+      <trans-unit id="e4A7e_l" resname="Tous droits réservés">
+        <source>Tous droits réservés</source>
+        <target>All rights reserved</target>
+      </trans-unit>
+      <trans-unit id="sYd4rjl" resname="Crée par">
+        <source>Crée par</source>
+        <target>Created by</target>
+      </trans-unit>
+      <trans-unit id="a3of.h6" resname="Confirmation de l'email">
+        <source>Confirmation de l'email</source>
+        <target>Email confirmation</target>
+      </trans-unit>
+      <trans-unit id="GrhSiCV" resname="Email bien confirmer">
+        <source>Email bien confirmer</source>
+        <target>Email confirmed succesufuly</target>
+      </trans-unit>
+      <trans-unit id="rdlysyp" resname="L'Equipes">
+        <source>L'Equipes</source>
+        <target>Team</target>
+      </trans-unit>
+      <trans-unit id="mDbS7ID" resname="Nos Equipes">
+        <source>Nos Equipes</source>
+        <target>Our Teams</target>
+      </trans-unit>
+      <trans-unit id="9UPwxuG" resname="Nos experts">
+        <source>Nos experts</source>
+        <target>Our experts</target>
+      </trans-unit>
+      <trans-unit id="NjtMlBd" resname="Innovation">
+        <source>Innovation</source>
+        <target>Innovation</target>
+      </trans-unit>
+      <trans-unit id="BJ6aB9g" resname="Bienvenu à Futura Solutions Partners">
+        <source>Bienvenu à Futura Solutions Partners</source>
+        <target>Welcome to Futura Solutions Partners</target>
+      </trans-unit>
+      <trans-unit id="1MttKcL" resname="Nous offrons des solutions personnalisées en collaborant étroitement avec nos clients pour comprendre leurs besoins et développer des stratégies innovantes qui les aident à atteindre leurs objectifs.">
+        <source>Nous offrons des solutions personnalisées en collaborant étroitement avec nos clients pour comprendre leurs besoins et développer des stratégies innovantes qui les aident à atteindre leurs objectifs.</source>
+        <target>We deliver customized solutions by working closely with our clients to understand their needs and develop innovative strategies that help them achieve their goals.</target>
+      </trans-unit>
+      <trans-unit id="Bd4Tvua" resname="Voir nos Services">
+        <source>Voir nos Services</source>
+        <target>See our Services</target>
+      </trans-unit>
+      <trans-unit id="FmFA1p_" resname="Notre mission">
+        <source>Notre mission</source>
+        <target>Our mission</target>
+      </trans-unit>
+      <trans-unit id="pChEkpS" resname="Notre engagement envers la réussite des organisations.">
+        <source>Notre engagement envers la réussite des organisations.</source>
+        <target>Our commitment to organizational success.</target>
+      </trans-unit>
+      <trans-unit id="4aVZLUv" resname="Futura Solution s'engage à fournir aux organisations les outils et connaissances pour prospérer. Nous aidons nos clients à réaliser leur vision avec des solutions innovantes et durables, tout en promouvant la diversité, l'inclusion et un environnement collaboratif pour tous.">
+        <source>Futura Solution s'engage à fournir aux organisations les outils et connaissances pour prospérer. Nous aidons nos clients à réaliser leur vision avec des solutions innovantes et durables, tout en promouvant la diversité, l'inclusion et un environnement collaboratif pour tous.</source>
+        <target>Futura Solution is committed to providing organizations with the tools and knowledge to thrive. We help our clients achieve their vision with innovative and sustainable solutions, while promoting diversity, inclusion and a collaborative environment for all.</target>
+      </trans-unit>
+      <trans-unit id="u_blL4h" resname="Offrir des outils et des connaissances pour la prospérité">
+        <source>Offrir des outils et des connaissances pour la prospérité</source>
+        <target>Providing tools and knowledge for prosperity.</target>
+      </trans-unit>
+      <trans-unit id="SkgZfrV" resname="Notre engagement">
+        <source>Notre engagement</source>
+        <target>Our commitment</target>
+      </trans-unit>
+      <trans-unit id="tNC9F05" resname="Aider les clients à réaliser leur vision">
+        <source>Aider les clients à réaliser leur vision</source>
+        <target>Helping clients achieve their vision</target>
+      </trans-unit>
+      <trans-unit id="UunS2dV" resname="Nos solutions">
+        <source>Nos solutions</source>
+        <target>Our solutions</target>
+      </trans-unit>
+      <trans-unit id="ZsqFGFE" resname="Innovantes et durables">
+        <source>Innovantes et durables</source>
+        <target>Innovative and sustainable</target>
+      </trans-unit>
+      <trans-unit id="D87rJIA" resname="Nos valeurs">
+        <source>Nos valeurs</source>
+        <target>Our values</target>
+      </trans-unit>
+      <trans-unit id="xdSJQMC" resname="Diversité, inclusion et collaboration">
+        <source>Diversité, inclusion et collaboration</source>
+        <target>Diversity, inclusion and collaboration</target>
+      </trans-unit>
+      <trans-unit id="DdlYy.d" resname="Notre Vission">
+        <source>Notre Vission</source>
+        <target>Our Vision</target>
+      </trans-unit>
+      <trans-unit id="Wz3Bndj" resname="Pour un avenir équitable et durable">
+        <source>Pour un avenir équitable et durable</source>
+        <target>For a fair and sustainable future</target>
+      </trans-unit>
+      <trans-unit id="NtcjK13" resname="Nous croyons en un avenir où les femmes ont le pouvoir, où l'entrepreneuriat social prospère et où l'environnement est préservé. C'est pourquoi Futura Solution Partners s'engage à créer des solutions innovantes qui permettent l'égalité et l'équité pour tous. Nous travaillons en étroite collaboration avec nos partenaires pour offrir des conseils de qualité et des services de soutien pour renforcer les communautés. Nous sommes convaincus qu'en travaillant ensemble, nous pouvons créer un monde meilleur pour tous.">
+        <source>Nous croyons en un avenir où les femmes ont le pouvoir, où l'entrepreneuriat social prospère et où l'environnement est préservé. C'est pourquoi Futura Solution Partners s'engage à créer des solutions innovantes qui permettent l'égalité et l'équité pour tous. Nous travaillons en étroite collaboration avec nos partenaires pour offrir des conseils de qualité et des services de soutien pour renforcer les communautés. Nous sommes convaincus qu'en travaillant ensemble, nous pouvons créer un monde meilleur pour tous.</source>
+        <target>We believe in a future where women are empowered, social entrepreneurship thrives, and the environment is preserved. That’s why Futura Solution Partners is committed to creating innovative solutions that enable equality and fairness for all. We work closely with our partners to provide quality advice and support services to strengthen communities. We believe that by working together, we can create a better world for all.</target>
+      </trans-unit>
+      <trans-unit id="0oYhsGt" resname="Témoignages">
+        <source>Témoignages</source>
+        <target>Testimonials</target>
+      </trans-unit>
+      <trans-unit id="GhvDQ2z" resname="Nos clients temoingne de notre expertise">
+        <source>Nos clients temoingne de notre expertise</source>
+        <target>Our customers testify to our expertise.</target>
+      </trans-unit>
+      <trans-unit id="jANk_GE" resname="Aucune avis donneés">
+        <source>Aucune avis donneés</source>
+        <target>No reviews given</target>
+      </trans-unit>
+      <trans-unit id="FeOTKOW" resname="Partenaires">
+        <source>Partenaires</source>
+        <target>Partners</target>
+      </trans-unit>
+      <trans-unit id="2ekUTbc" resname="Nos partenaires">
+        <source>Nos partenaires</source>
+        <target>Our partners</target>
+      </trans-unit>
+      <trans-unit id="vs5dQQF" resname="Aucune partenaire enregistrer">
+        <source>Aucune partenaire enregistrer</source>
+        <target>No partners registered</target>
+      </trans-unit>
+      <trans-unit id="Z0GNB9O" resname="Notre programme">
+        <source>Notre programme</source>
+        <target>Our program</target>
+      </trans-unit>
+      <trans-unit id="3y_J3dv" resname="L'impact positif pour votre organisation">
+        <source>L'impact positif pour votre organisation</source>
+        <target>The positive impact for your organization</target>
+      </trans-unit>
+      <trans-unit id="DzEy7xT" resname="Nous nous consacrons à donner aux organisations les moyens de réussir dans leurs domaines critiques, notamment la gestion de projets, l'égalité des sexes et l'inclusion sociale. Nos solutions personnalisées sont conçues pour aider nos partenaires à favoriser la réussite, la diversité et l'impact positif. Explorez nos services et voyez comment Futura Solution Partners peut aider votre organisation à prospérer">
+        <source>Nous nous consacrons à donner aux organisations les moyens de réussir dans leurs domaines critiques, notamment la gestion de projets, l'égalité des sexes et l'inclusion sociale. Nos solutions personnalisées sont conçues pour aider nos partenaires à favoriser la réussite, la diversité et l'impact positif. Explorez nos services et voyez comment Futura Solution Partners peut aider votre organisation à prospérer</source>
+        <target>Nous nous consacrons à donner aux organisations les moyens de réussir dans leurs domaines critiques, notamment la gestion de projets, l'égalité des sexes et l'inclusion sociale. Nos solutions personnalisées sont conçues pour aider nos partenaires à favoriser la réussite, la diversité et l'impact positif. Explorez nos services et voyez comment Futura Solution Partners peut aider votre organisation à prospérer.</target>
+      </trans-unit>
+      <trans-unit id="GU9jyAK" resname="Nos Programmes">
+        <source>Nos Programmes</source>
+        <target>Our Programs</target>
+      </trans-unit>
+      <trans-unit id="X3hZGl4" resname="Se connecter">
+        <source>Se connecter</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="VjhQBXl" resname="Veuillez se connecter">
+        <source>Veuillez se connecter</source>
+        <target>Please login</target>
+      </trans-unit>
+      <trans-unit id="uhLPWhY" resname="Mot de passe">
+        <source>Mot de passe</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="IQ5c2Br" resname="Avez-vous oubliez votre mot de passe.">
+        <source>Avez-vous oubliez votre mot de passe.</source>
+        <target>Have you forgotten your password ?</target>
+      </trans-unit>
+      <trans-unit id="iDiyEdN" resname="Trouver votre mot de passe">
+        <source>Trouver votre mot de passe</source>
+        <target>Find your password</target>
+      </trans-unit>
+      <trans-unit id="lGYKfv0" resname="Mot de passe oublier">
+        <source>Mot de passe oublier</source>
+        <target>Forgotten password.</target>
+      </trans-unit>
+      <trans-unit id="7PhR3Ra" resname="Réinitialiser votre mot de passe">
+        <source>Réinitialiser votre mot de passe</source>
+        <target>Reset your password.</target>
+      </trans-unit>
+      <trans-unit id="krmW8mA" resname="Votre email">
+        <source>Votre email</source>
+        <target>Your email</target>
+      </trans-unit>
+      <trans-unit id="rVbIyJ6" resname="Nouveau mot de passe">
+        <source>Nouveau mot de passe</source>
+        <target>New Password</target>
+      </trans-unit>
+      <trans-unit id="U08_EeA" resname="Création d'un nouveau mot de passe">
+        <source>Création d'un nouveau mot de passe</source>
+        <target>Creating a new password</target>
+      </trans-unit>
+      <trans-unit id="aS_hfmC" resname="Nouveau Mot de Passe">
+        <source>Nouveau Mot de Passe</source>
+        <target>New Password</target>
+      </trans-unit>
+      <trans-unit id="nROnk_N" resname="Nos Services">
+        <source>Nos Services</source>
+        <target>Our Services</target>
+      </trans-unit>
+      <trans-unit id="2LxztTw" resname="Nos services">
+        <source>Nos services</source>
+        <target>Our Services</target>
+      </trans-unit>
+      <trans-unit id="mogDCAg" resname="Futura Solution est une société de conseil spécialisée dans des solutions innovantes pour les enjeux sociétaux, avec un accompagnement personnalisé pour atteindre les objectifs de ses clients">
+        <source>Futura Solution est une société de conseil spécialisée dans des solutions innovantes pour les enjeux sociétaux, avec un accompagnement personnalisé pour atteindre les objectifs de ses clients</source>
+        <target>Futura Solution is a consulting company specializing in innovative solutions for societal issues, with personalized support to achieve its clients' objectives.</target>
+      </trans-unit>
+      <trans-unit id="4oOBQu3" resname="Nos differents services">
+        <source>Nos differents services</source>
+        <target>Our different services</target>
+      </trans-unit>
+      <trans-unit id="QyiNNbw" resname="Voir la suite">
+        <source>Voir la suite</source>
+        <target>See more</target>
+      </trans-unit>
+      <trans-unit id=".jciGXS" resname="Nos autres services">
+        <source>Nos autres services</source>
+        <target>Our other services</target>
+      </trans-unit>
+      <trans-unit id="F3kwn5G" resname="Autres">
+        <source>Autres</source>
+        <target>others</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

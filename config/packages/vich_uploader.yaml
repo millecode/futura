@@ -1,0 +1,37 @@
+# config/packages/vich_uploader.yaml or app/config/config.yml
+vich_uploader:
+  db_driver: orm
+
+  metadata:
+    type: attribute
+
+  mappings:
+    Services:
+      uri_prefix: /img/services
+      upload_destination: "%kernel.project_dir%/public/assets/img/services"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+    Programmes:
+      uri_prefix: /img/programme
+      upload_destination: "%kernel.project_dir%/public/assets/img/programme"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+    Equipes:
+      uri_prefix: /img/equipe
+      upload_destination: "%kernel.project_dir%/public/assets/img/equipe"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+    Actualiter:
+      uri_prefix: /img/actualiter
+      upload_destination: "%kernel.project_dir%/public/assets/img/actualiter"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+    Partenaire:
+      uri_prefix: /img/partenaire
+      upload_destination: "%kernel.project_dir%/public/assets/img/partenaire"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+    Temoinage:
+      uri_prefix: /img/temoinage
+      upload_destination: "%kernel.project_dir%/public/assets/img/temoinage"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer

@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}L'Equipes{% endtrans %}
+	| Futura Solutions Parteners
+{% endblock %}
+
+{% block body %}
+
+	<div class="it-breadcrumb-area it-breadcrumb-bg">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12 mt-5">
+					<div class="it-breadcrumb-content z-index-3 text-center">
+						<div class="it-breadcrumb-title-box">
+							<h3 class="it-breadcrumb-title">{% trans %}Nos Equipes{% endtrans %}</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+
+		<div class="it-team-right-box my-5">
+			<h1 class="text-center ">{% trans %}Nos experts{% endtrans %}</h1>
+			<div class="row my-5">
+				{% for equipe in equipes %}
+					<div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-30">
+						<div class="it-team-item">
+							<div class="it-team-thumb-box p-relative">
+								<div class="it-team-thumb">
+									<img src="{{asset("assets/img/equipe/"~ equipe.image)}}" class="img-fluide" alt="">
+								</div>
+
+								<div class="it-team-author-box d-flex align-items-center justify-content-between">
+									<div class="it-team-author-info">
+										<h5 class="it-team-author-name">
+											<a href="">{{equipe.nom}}</a>
+										</h5>
+										<span>{{equipe.poste}}</span>
+									</div>
+									<div class="it-team-link">
+										<a href="{{path('voir_equipe',{'id':equipe.id})}}">
+											<svg width="21" height="8" viewbox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="currentcolor"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

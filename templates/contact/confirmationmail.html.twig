@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Confirmation de l'email{% endtrans %}
+	| Futura Solution Parteners
+{% endblock %}
+
+{% block body %}
+
+
+	<div class="it-breadcrumb-area it-breadcrumb-bg">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12 mt-5">
+					<div class="it-breadcrumb-content z-index-3 text-center">
+						<div class="it-breadcrumb-title-box">
+							<h3 class="it-breadcrumb-title">{% trans %}Email bien confirmer{% endtrans %}.</h3>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="it-contact__area pt-120 pb-120">
+		<div class="container">
+			<div class="it-contact__wrap fix z-index-3 p-relative">
+				<div class="it-contact__shape-1 d-none d-xl-block">
+					<img src="{{asset('assets/img/contact/shape-2-1.png')}}" alt="">
+				</div>
+				<div class="row align-items-end">
+					{% for type, messages in app.flashes %}
+						{% for message in messages %}
+							<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+								{{ message }}
+								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							</div>
+						{% endfor %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
