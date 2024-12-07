@@ -25,10 +25,10 @@ DirectoryIndex index.php
 
     RewriteEngine On
     # Redirection pour s'assurer que les assets sont accessibles depuis /assets/
-    RewriteRule ^assets/(.*)$ /public/assets/$1 [L]
+    #RewriteRule ^assets/(.*)$ /public/assets/$1 [L]
 
     # Allow direct access to assets files
-    RewriteCond %{REQUEST_URI} ^/assets/
+    RewriteCond %{REQUEST_URI} ^/public/assets/
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteRule ^ - [L]
 
