@@ -24,6 +24,8 @@ DirectoryIndex index.php
     Options +SymLinksIfOwnerMatch
 
     RewriteEngine On
+    # Redirection pour s'assurer que les assets sont accessibles depuis /assets/
+    RewriteRule ^assets/(.*)$ /public/assets/$1 [L]
 
     # Allow direct access to assets files
     RewriteCond %{REQUEST_URI} ^/assets/
